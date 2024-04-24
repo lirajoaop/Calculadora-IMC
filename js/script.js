@@ -96,7 +96,8 @@ function calcImc(weight, height){
 }
 
 function showOrHideResults(){
-  
+  calcContainer.classList.toggle('hide')
+  resultContainer.classList.toggle('hide')
 }
 
 // Inicialização
