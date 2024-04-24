@@ -86,11 +86,17 @@ function validDigits(text) {
 createTable(data)
 
 // Eventos
+document.addEventListener('DOMContentLoaded', (event) => {
+  // Seu código aqui
+  [heightInput, weightInput].forEach((el) => {
+    el.addEventListener('input', (e) => {
+      const updatedValue = validDigits(e.target.value)
+      e.target.value = updatedValue
+    })
+  })
 
-clearBtn.addEventListener('click', (e) => {
-  e.preventDefault()
-  
-  cleanInputs()
-})
-
-
+  clearBtn.addEventListener('click', (e) => {
+    e.preventDefault()
+    cleanInputs()
+  })
+});
