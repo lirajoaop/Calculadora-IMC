@@ -95,6 +95,16 @@ document.addEventListener('DOMContentLoaded', (event) => {
     })
   })
 
+  calcBtn.addEventListener('click', (e) => {
+    e.preventDefault()
+
+    const weight = +weightInput.value.replace(',', '.' )
+    const height = +heightInput.value.replace(',', '.' )
+
+
+
+  })
+
   clearBtn.addEventListener('click', (e) => {
     e.preventDefault()
     cleanInputs()
