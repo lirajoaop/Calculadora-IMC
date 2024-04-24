@@ -77,7 +77,7 @@ function cleanInputs() {
 }
 
 function validDigits(text) {
-  
+  return text.replace(/[^0-9,]/g, '')
 }
 
 // Inicialização
